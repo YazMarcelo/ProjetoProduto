@@ -1,5 +1,6 @@
 package persistencia;
 
+//import classededados.Lista;
 import classededados.Produto;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -13,6 +14,10 @@ public class ClasseDAO {
     private String arquivo = t + "produto.csv";
     
     public Produto[] recuperar() throws Exception {
+//        Lista lista = new Lista();
+//        Produto objProd = null;
+        
+        
 //        Produto listaDeAluno[] = new Produto[30];
 //        Produto objAluno = null;
 //

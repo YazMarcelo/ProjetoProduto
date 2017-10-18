@@ -10,10 +10,25 @@ package classededados;
  * @author selecta
  */
 public class Produto {
-    private int codigo = 0;
-    private String descricao = "";
-    private double valor = 0;
+
+    private int codigo;
+    private String descricao;
+    private double valor;
     private Produto proximo;
+
+    public Produto() {
+        codigo = 0;
+        descricao = "";
+        valor = 0;
+        proximo = null;
+    }
+
+    public Produto(int codigo, String descricao, double valor) {
+        this.codigo = codigo;
+        this.descricao = descricao;
+        this.valor = valor;
+        this.proximo = null;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -46,6 +61,5 @@ public class Produto {
     public void setProximo(Produto proximo) {
         this.proximo = proximo;
     }
-    
-        
+
 }

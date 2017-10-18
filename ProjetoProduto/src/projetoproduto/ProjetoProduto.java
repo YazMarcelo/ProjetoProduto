@@ -5,6 +5,9 @@
  */
 package projetoproduto;
 
+import classededados.Lista;
+import persistencia.ClasseDAO;
+
 /**
  *
  * @author HELM
@@ -14,8 +17,12 @@ public class ProjetoProduto {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Exception {
+        Lista lista = new Lista();
+        System.out.println("Blá!");
+        ClasseDAO dao = new ClasseDAO();
+        lista = dao.recuperar();
+        lista.mostraLista();
     }
     
 }
